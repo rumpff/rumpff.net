@@ -1,0 +1,108 @@
+:root {
+  --color-main: #dddddd;
+  --color-background: #1f1f1f;
+
+  --header-height: 150px;
+  --content-max-width: 500px; 
+}
+
+@keyframes header-animation {
+  from { color: #999; }
+  to { color: var(--color-main); }
+}
+
+body {
+  color: var(--color-main);
+  background-color: var(--color-background);
+}
+
+h1, a, p {
+  font-family: 'Satoshi', sans-serif;
+}
+
+.content {
+  max-width: var(--content-max-width);
+  height: auto;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--color-background);
+}
+
+.header .title  {
+  font-size: 64px;
+  display: inline-block;
+
+  height: var(--header-height);
+}
+
+.header .title h1 {
+  margin: auto;
+  text-align: center;
+  font-size: 64px;
+  line-height: var(--header-height); 
+
+  text-shadow:  0px 0px 0px var(--color-main);
+}
+
+.header hr {
+  border: 3px solid var(--color-main);
+  margin: 0;
+}
+
+.links {
+  padding-top: calc(var(--header-height) + 15px);
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links ul li {
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.links ul li a {
+  color: var(--color-main);
+  font-size: 64px;
+  text-decoration: none;
+
+
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.links ul li:hover a {
+  font-weight: 600;
+  text-shadow: 0px 0px 15px var(--accent-color);
+  color: var(--accent-color);
+}
+
+a {
+  --accent-color: var(--color-main);
+}
+
+a[data-hover-color="portfolio"] {
+  --accent-color: #fff;
+}
+
+a[data-hover-color="github"] {
+  --accent-color: #2ece4b;
+}
+
+a[data-hover-color="linkedin"] {
+  --accent-color: #2084e9;
+}
+
+a[data-hover-color="contact"] {
+  --accent-color: #e5e753;
+}
