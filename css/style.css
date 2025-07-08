@@ -106,13 +106,13 @@ h1, a, p {
   left: 0;
   width: 100%;
   bottom: -12px; 
-  height: 6px; 
+  height: 4px; 
 
   background-color: var(--accent-color); 
 
   z-index: -1;
 
-  transform: scaleX(0);
+  transform: scaleX(0.78);
   opacity: 0;
   transition: all 0.2s cubic-bezier(0.25, 1, 0.5, 1); /* prevent bounce */
   
