@@ -33,6 +33,8 @@ h1, a, p {
   left: 0;
   top: 0;
   background-color: var(--color-background);
+
+  z-index: 999;
 }
 
 .header .title  {
